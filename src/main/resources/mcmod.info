@@ -1,0 +1,16 @@
+[
+{
+  "modid": "runecraft",
+  "name": "Runecraft",
+  "description": "Runescape Inspired Items Mod.",
+  "version": "1.0",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Adventuretime5k"],
+  "credits": "Forge, FML, eclipse, and Loremaster",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
