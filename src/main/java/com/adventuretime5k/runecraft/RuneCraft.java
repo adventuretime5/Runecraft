@@ -2,11 +2,14 @@ package com.adventuretime5k.runecraft;
 
 import com.adventuretime5k.runecraft.proxy.CommonProxy;
 
+import init.ModArmors;
 import init.ModBlocks;
 import init.ModCrafting;
 import init.ModItems;
+import init.ModTools;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -32,13 +35,22 @@ public class RuneCraft {
 		
 		ModBlocks.init();
 		ModBlocks.register();
+		
+		ModTools.init();
+		ModTools.register();
+		
+		ModArmors.init();
+		ModArmors.register();
+			
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
 		proxy.init();
-		ModCrafting.register();
+		ModCrafting.registerCraftingRecipes();
+		
+		
 	}
 	
 	@EventHandler
