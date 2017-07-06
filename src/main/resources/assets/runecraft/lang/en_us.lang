@@ -49,6 +49,11 @@ item.steel_chestplate.name=Steel Chestplate
 item.steel_helmet.name=Steel Helmet
 item.steel_sword.name=Steel Shortsword
 item.steel_leggings.name=Steel Platelegs
+item.bronze_mix.name=Bronze Mix
+item.steel_mix.name=Steel Mix
+item.mithril_mix.name=Mithril Mix
+item.adamant_mix.name=Adamant Mix
+item.runite_mix.name=Runite Mix
 
 // Blocks
 tile.adamant_block.name=Adamant Block
