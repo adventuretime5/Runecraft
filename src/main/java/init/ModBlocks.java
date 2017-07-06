@@ -1,48 +1,36 @@
 package init;
 
-import blocks.Adamant_block;
-import blocks.Adamant_ore;
-import blocks.Bronze_block;
-import blocks.Copper_ore;
-import blocks.Mithril_block;
-import blocks.Mithril_ore;
-import blocks.Runite_block;
-import blocks.Runite_ore;
-import blocks.Steel_block;
-import blocks.Tin_ore;
+import blocks.ModOre;
+import blocks.ModBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.IForgeRegistryEntry;
 
 public class ModBlocks {
 	
-	public static Block adamant_block;
-	public static Block bronze_block;
-	public static Block mithril_block;
-	public static Block steel_block;
-	public static Block runite_block;
-	public static Block adamant_ore;
-	public static Block tin_ore;
-	public static Block mithril_ore;
-	public static Block copper_ore;
-	public static Block runite_ore;
-	
+	public static Block adamant_block, bronze_block, mithril_block, steel_block, runite_block;
+	public static Block adamant_ore, tin_ore, mithril_ore, copper_ore, runite_ore, iron_ore;
 	
 	public static void init() {
-		adamant_block = new Adamant_block();
-		adamant_ore = new Adamant_ore();
-		mithril_block = new Mithril_block();
-		mithril_ore = new Mithril_ore();
-		runite_block = new Runite_block();
-		runite_ore = new Runite_ore();
-		bronze_block = new Bronze_block();
-		tin_ore = new Tin_ore();
-		steel_block = new Steel_block();
-		copper_ore = new Copper_ore();
+		runite_block = new ModBlock(20.0F, "pickaxe", 7, "runite_block");
+		runite_ore = new ModOre(6.0F, "pickaxe", 6, "runite_ore");
+		adamant_block = new ModBlock(14.0F, "pickaxe", 6, "adamant_block");
+		adamant_ore = new ModOre(5.0F, "pickaxe", 5, "adamant_ore");
+		mithril_block = new ModBlock(12.0F, "pickaxe", 5, "mithril_block");
+		mithril_ore = new ModOre(4.0F, "pickaxe", 4, "mithril_ore");
+		steel_block = new ModBlock(10.0F, "pickaxe", 4, "steel_block");
+		iron_ore = new ModOre(3.0F, "pickaxe", 2, "iron_ore");
+		tin_ore = new ModOre(2.5F, "pickaxe", 1, "tin_ore");
+		bronze_block = new ModBlock(8.0F, "pickaxe", 2, "bronze_block");
+		copper_ore = new ModOre(2.5F, "pickaxe", 1, "copper_ore");
+		
+
 		
 		
 	}		
